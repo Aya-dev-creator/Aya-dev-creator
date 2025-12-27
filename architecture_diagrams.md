@@ -79,13 +79,13 @@ GPS NEO-6M:
 ├── TX   → GPIO 15 (RX) (Pin 10)
 └── RX   → GPIO 14 (TX) (Pin 8)
 
-MCP3008 ADC (pour MQ-135 analogique):
+ADS1115 ADC (pour MQ-135 analogique):
 ├── VCC  → 3.3V
 ├── GND  → GND
-├── CLK  → SCLK (Pin 23)
-├── DOUT → MISO (Pin 21)
-├── DIN  → MOSI (Pin 19)
-└── CS   → CE0 (Pin 24)
+├── SCL  → SCL (Pin 5)
+├── SDA  → SDA (Pin 3)
+├── A0   → MQ-135 AOUT
+└── ADDR → GND (adresse 0x48)
 ```
 
 ## 3. Architecture Logicielle
